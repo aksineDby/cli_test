@@ -1,5 +1,9 @@
 <?php
 
+if (php_sapi_name() !== 'cli') {
+    exit('Sorry, it\'s console app');
+}
+
 // 1 2 3 4 same hello world true false
 $main_array = ['vasya', 'pupkin', 'apple', 23, 41, 55, 1, 2, true];
 $nextLine = PHP_EOL;
