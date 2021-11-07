@@ -34,7 +34,7 @@ function echoLog($value) {
 /* 1) Убедиться что в $main_array нету булевского значение true */
 echoLog('Step 1. Predefined values has true?');
 $booleanTrueIsExists = false;
-array_walk($main_array, function($v) use (&$booleanTrueIsExists) {
+array_walk($sendedArguments, function($v) use (&$booleanTrueIsExists) {
     if ($v === true) $booleanTrueIsExists = true;
 });
 echoLog($booleanTrueIsExists ? 'Yes' : 'No');
