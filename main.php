@@ -5,7 +5,7 @@ if (php_sapi_name() !== 'cli') {
 }
 
 // 1 2 3 4 same hello world true false
-$main_array = ['vasya', 'pupkin', 'apple', 23, 41, 55, 1, 2, true];
+$main_array = ['vasya', 'pupkin', 'apple', 23, 41, 55, 1, 2];
 $nextLine = PHP_EOL;
 
 // var_export($argv);
